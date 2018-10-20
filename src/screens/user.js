@@ -6,7 +6,7 @@ class User extends React.Component {
   // stack navigator's page settings
   static navigationOptions = {
   	header: null,
-    title: "Home"
+    title: "User"
   }
   render() {
     // stack navigator's navigation object
