@@ -2,7 +2,7 @@ import React from "react";
 import {serverURL} from "../../App";
 import Icon from 'react-native-vector-icons/FontAwesome';
 import {StyleSheet, Text, View, Image, ImageBackground,
-  Dimensions, TouchableOpacity} from "react-native";
+  Dimensions, TouchableOpacity, Alert} from "react-native";
 import {ImagePicker, Permissions} from "expo";
 
 class Home extends React.Component {
@@ -42,17 +42,16 @@ class Home extends React.Component {
           "content-type": "multipart/form-data",
         },
       }).then((resolved) => {
-        // navigate to the User page with the server's processed JSON data
-        var {navigate} = this.props.navigation;
-        navigate("User");
+        resolved.json().then((data) => {
+          // navigate to the User page with the server's processed JSON data
+          var {navigate} = this.props.navigation;
+          navigate("User");
+        });
       }).catch((error) => {
         Alert.alert("Oh no!", error.message);
         return;
       });
-      } else {
-        Alert.alert("Oh no!", "Image processing failed!");
-        return;
-      }
+    }
   }
   render() {
     // stack navigator's navigation object

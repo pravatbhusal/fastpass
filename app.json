@@ -1,16 +1,16 @@
 {
   "expo": {
-    "name": "fastpass",
-    "description": "This project is really great.",
+    "name": "FastPass",
+    "description": "An app that speeds-up the boarding pass process using facial recognition.",
     "slug": "fastpass",
     "privacy": "public",
     "sdkVersion": "30.0.0",
     "platforms": ["ios", "android"],
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./rsrc/icon.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./rsrc/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
