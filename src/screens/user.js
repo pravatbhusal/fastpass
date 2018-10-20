@@ -45,6 +45,8 @@ class User extends React.Component {
 
     // update state
     this.setState({faceImage: data.faceImage});
+    let faceSimilarity = (data.faceSimilarity * 100) + "%";
+    this.setState({faceSimilarity: faceSimilarity});
     this.setState({email: data.email});
     this.setState({aadvantageId: data.aadvantageId});
     this.setState({firstName: data.firstName});
@@ -64,7 +66,26 @@ class User extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Hello World</Text>
+        <Image
+          style={styles.faceImage}
+          source={{uri: serverURL + "/media/faces/" + this.state.faceImage}}
+        />
+        <Text style={styles.infoText}>Face Similarity: {this.state.faceSimilarity}</Text>
+        <Text style={styles.infoText}>Email: {this.state.email}</Text>
+        <Text style={styles.infoText}>aaAdvantage Id: {this.state.aadvantageId}</Text>
+        <Text style={styles.infoText}>First Name: {this.state.firstName}</Text>
+        <Text style={styles.infoText}>Last Name: {this.state.lastName}</Text>
+        <Text style={styles.infoText}>Gender: {this.state.gender}</Text>
+        <Text style={styles.infoText}>Flight Number: {this.state.flightNumber}</Text>
+        <Text style={styles.infoText}>Aircraft Type: {this.state.aircraftType}</Text>
+        <Text style={styles.infoText}>Origin: {this.state.origin}</Text>
+        <Text style={styles.infoText}>Destination: {this.state.destination}</Text>
+        <Text style={styles.infoText}>Boarding Time: {this.state.boardingTime}</Text>
+        <Text style={styles.infoText}>Departure Time: {this.state.departureTime}</Text>
+        <Text style={styles.infoText}>Arrival Time: {this.state.arrivalTime}</Text>
+        <Text style={styles.infoText}>Date: {this.state.date}</Text>
+        <Text style={styles.infoText}>Seat: {this.state.seat}</Text>
+        <Text style={styles.infoText}>Cost: {this.state.cost}</Text>
       </View>
     );
   }
@@ -76,6 +97,11 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: "column",
     alignItems: "center"
+  },
+  infoText: {
+    fontSize: 12.5,
+    fontWeight: 'bold',
+    color: "#8299C4"
   }
 });
 

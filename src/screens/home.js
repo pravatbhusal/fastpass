@@ -117,7 +117,6 @@ const styles = StyleSheet.create({
   openCameraText: {
     fontSize: 12.5,
     fontWeight: 'bold',
-    fontWeight: "bold",
     color: "#FFFFFF"
   }
 });
