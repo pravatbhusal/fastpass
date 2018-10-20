@@ -43,9 +43,9 @@ class Home extends React.Component {
         },
       }).then((resolved) => {
         resolved.json().then((data) => {
-          // navigate to the User page with the server's processed JSON data
+          // navigate to the User page with a prop of the processed face image
           var {navigate} = this.props.navigation;
-          navigate("User");
+          navigate("User", {data: data});
         });
       }).catch((error) => {
         Alert.alert("Oh no!", error.message);
@@ -54,8 +54,6 @@ class Home extends React.Component {
     }
   }
   render() {
-    // stack navigator's navigation object
-    var {navigate} = this.props.navigation;
     return (
       <ImageBackground source={require("../../rsrc/homebg.png")}
         style={styles.container}
