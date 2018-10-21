@@ -1,0 +1,23 @@
+[{
+    "code": "DFW",
+    "name": "Dallas Fort Worth International",
+    "stateCode": "TX",
+    "city": "Dallas/Fort Worth",
+    "countryCode": "US",
+    "countryName": "United States",
+    "latitude": 32.89611111111111,
+    "longitude": -97.0411111111111,
+    "admiralsClubUrl": "https://www.aa.com/i18n/travelInformation/airportAmenities/dfw-club.jsp"
+},
+
+{
+    "code": "LAX",
+    "name": "Los Angeles International",
+    "stateCode": "CA",
+    "city": "Los Angeles",
+    "countryCode": "US",
+    "countryName": "United States",
+    "latitude": 33.9425,
+    "longitude": -118.40694444444445,
+    "admiralsClubUrl": "https://www.aa.com/i18n/travelInformation/airportAmenities/lax-club.jsp"
+}]

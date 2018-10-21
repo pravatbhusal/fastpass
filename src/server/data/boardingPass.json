@@ -1,0 +1,3 @@
+[{"flightNumber":"2435","aircraftType":"321","origin":"LAX","destination":"DFW","boardingTime": "2018-10-26T10:55-10:55","departureTime":"2018-10-26T11:25-11:25","arrivalTime":"2018-10-26T04:33-05:00","gate":"B41","seat":"27A","cost":"424"},
+{"flightNumber":"2420","aircraftType":"32B","origin":"LAX","destination":"DFW","boardingTime": "2018-10-26T07:25-07:25","departureTime":"2018-10-26T07:50-08:00","arrivalTime":"2018-10-26T12:59-05:00","gate":"B46","seat":"12D","cost":"294"},
+{"flightNumber":"2404","aircraftType":"32B","origin":"LAX","destination":"DFW","boardingTime": "2018-10-26T05:40-05:40","departureTime":"2018-10-26T06:05-07:00","arrivalTime":"2018-10-26T11:16-05:00","gate":"B48","seat":"5C","cost":"333"}]
