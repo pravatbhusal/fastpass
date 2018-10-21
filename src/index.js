@@ -2,12 +2,12 @@ import React from 'react';
 import {Platform, StatusBar} from 'react-native';
 import {createStackNavigator} from 'react-navigation';
 import Home from "./screens/home";
-import User from "./screens/user";
+import Customer from "./screens/customer";
 
 // create the stackNavigator that holds all the pages (Intents)
 const Navigation = createStackNavigator({
   Home: {screen: Home},
-  User: {screen: User}
+  Customer: {screen: Customer}
 },
 {
   // create a padding to avoid overlapping the navbar of the device

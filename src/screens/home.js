@@ -14,7 +14,7 @@ class Home extends React.Component {
 
   // open the image picker to take a picture of the customer
   async takeFaceImage(pictureOption) {
-    //ask for camera permissions from the user
+    // ask for camera permissions
     await Permissions.askAsync(Permissions.CAMERA);
     await Permissions.askAsync(Permissions.CAMERA_ROLL);
 
@@ -43,9 +43,9 @@ class Home extends React.Component {
         },
       }).then((resolved) => {
         resolved.json().then((data) => {
-          // navigate to the User page with a prop of the processed face image
+          // navigate to the customer page with a prop of the processed face image
           var {navigate} = this.props.navigation;
-          navigate("User", {data: data});
+          navigate("Customer", {data: data});
         });
       }).catch((error) => {
         Alert.alert("Oh no!", error.message);

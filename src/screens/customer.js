@@ -3,7 +3,7 @@ import {serverURL} from "../../App";
 import Icon from 'react-native-vector-icons/FontAwesome';
 import {StyleSheet, Text, View, Image, TouchableOpacity} from "react-native";
 
-class User extends React.Component {
+class Customer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -30,15 +30,15 @@ class User extends React.Component {
   // stack navigator's page settings
   static navigationOptions = {
   	header: null,
-    title: "User"
+    title: "Customer"
   }
 
   componentWillMount() {
-    this.setUserData();
+    this.setCustomerData();
   }
 
   // set the data of the customer
-  setUserData() {
+  setCustomerData() {
     // grab the customer's JSON data processed by the server
     let {params} = this.props.navigation.state;
     let data = JSON.parse(params.data);
@@ -105,4 +105,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default User;
+export default Customer;
