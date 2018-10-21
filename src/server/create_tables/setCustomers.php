@@ -1,5 +1,5 @@
 <?php
-include_once("db/dbconnection.php");
+include_once("../db/dbconnection.php");
 
 // get the json file for airports and decode it
 $jsonFile = "data/customers.json";
@@ -15,7 +15,6 @@ foreach ($data as $row) {
   $gender = $row["gender"];
 
   // set a query to insert the data
-  // we don't pass boardingPassId or faceImage because that's done manually
   $query = "INSERT INTO customers (email, aadvantageId,
     firstName, lastName, gender) VALUES('$email', '$aadvantageId',
     '$firstName', '$lastName', '$gender')";

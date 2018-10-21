@@ -35,7 +35,7 @@ class Home extends React.Component {
       formData.append("imageData", imageData);
 
       // send an HTTP Request to the server to handle the form data
-      return await fetch(serverURL + "/processFace.php", {
+      return await fetch(serverURL + "/face_api/findSimilarFace.php", {
         method: "POST",
         body: formData,
         header: {
@@ -43,7 +43,7 @@ class Home extends React.Component {
         },
       }).then((resolved) => {
         resolved.json().then((data) => {
-          // navigate to the customer page with a prop of the processed face image
+          data = JSON.stringify(data);
           var {navigate} = this.props.navigation;
           navigate("Customer", {data: data});
         });

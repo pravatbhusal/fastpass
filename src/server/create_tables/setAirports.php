@@ -1,5 +1,5 @@
 <?php
-include_once("db/dbconnection.php");
+include_once("../db/dbconnection.php");
 
 // get the json file for airports and decode it
 $jsonFile = "data/airports.json";
