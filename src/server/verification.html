@@ -1,0 +1,70 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="verification_style.css">
+    <link rel="shortcut icon" href="rsrc/AA_Favicon.png">
+
+    <title>American Airlines - Check In Verification</title>
+    <!-- Image and text -->
+    <div class="navbar transparent navbar-inverse navbar-fixed-top">
+      <nav class="navbar inner">
+        <img src="rsrc/AA_Logo.png" width="600" height="100" class="d-inline-block align-top" alt="">
+          <h4><i>"The World's Greatest Flyers Fly American"</i></h4>
+        </nav>
+    </div>
+  </head>
+
+  <body>
+    <p class="title">Check In Verification</p>
+    <p class="subtitle">Please upload an image of your official ID and complete the form below.</p>
+
+    <div class="container">
+      <form>
+        <div class="form-group">
+          <label for="exampleFormControlFile1">Scan your official ID</label>
+          <input type="file" class="form-control-file" id="exampleFormControlFile1" required>
+        </div>
+        <div class="form-group">
+          <label for="formGroupExampleInput">Email</label>
+          <input type="email" class="form-control" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="formGroupExampleInput2">AAdvantage ID</label>
+          <input type="text" class="form-control" name="aadvantageId" placeholder="Enter your AAdvantage ID">
+        </div>
+        <div class="form-group">
+          <label for="formGroupExampleInput2">First Name</label>
+          <input type="text" class="form-control" name="firstName" placeholder="Enter your first name" required>
+        </div>
+        <div class="form-group">
+          <label for="formGroupExampleInput2">Last Name</label>
+          <input type="text" class="form-control" name="lastName" placeholder="Enter your last name" required>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="male" required>
+          <label class="form-check-label" for="inlineRadio1">Male</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" value="female">
+          <label class="form-check-label" for="inlineRadio2">Female</label>
+        </div>
+
+        <div class="text-center">
+          <button class="btn btn-primary" type="submit" id="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
