@@ -1,3 +1,7 @@
+<img src="https://raw.githubusercontent.com/Shadowsych/fastpass/master/rsrc/fastpassicon.png" width="100" height="100" />
+
+### DevPost: https://devpost.com/software/fastpass
+
 # FastPass
 A mobile app that speeds-up the boarding pass process using facial recognition.
 This program was created for HackTX, specifically for American Airlines.
