@@ -27,10 +27,10 @@ This program was created for HackTX, specifically for American Airlines.
 - Change the "Ocp-Apim-Subscription-Key" in findSimilarFace.php and addFace.php to your Face API key
 
 ### 5. Create the "customer_face_list" face list id from the URL below
--https://eastus.dev.cognitive.microsoft.com/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039524b/console
+- https://eastus.dev.cognitive.microsoft.com/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039524b/console
 
 ### 6. Load the create_data PHP files in the server folder
-- Inside the src/server/create_data folder there are PHP files you must run
+- Inside the src/server/create_data folder there are PHP files you must run to initiate the database
 
 ### 7. chmod permissions onto the face_api and media directory
 - In the src/server/media and src/server/face_api folders do a "chmod 777 -R ." to give
