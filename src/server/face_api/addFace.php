@@ -60,4 +60,6 @@
     firstName, lastName, gender, faceId) VALUES('$email', '$aadvantageId',
     '$firstName', '$lastName', '$gender', '$persistedFaceId')";
   mysqli_query($link, $query);
+
+  header("Location: $serverURL"); // back to the root URL
 ?>
