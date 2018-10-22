@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/Shadowsych/fastpass/master/rsrc/fastpassicon.png" width="100" height="100" />
+<img src="https://raw.githubusercontent.com/Shadowsych/fastpass/master/rsrc/fastpassicon.PNG" width="100" height="100" />
 
 ### DevPost: https://devpost.com/software/fastpass
 
