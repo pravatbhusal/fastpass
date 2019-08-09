@@ -1,7 +1,9 @@
-# Apache Web-Server
-This folder contains the files for the Apache (PHP) Web-server. It also contains the front-end for
-customers of American Airlines to verify that they checked into the airport.
+# American Airlines Website and Web-server
+This folder contains the files for the american airlines website and server-side scripts.
+
+The face_api and create_data folders contain the PHP scripts that the website and React Native applications fetches from.  
+
+To run the web-server, place these files inside an Apache webs-server. You can access the website by opening the web-server in a web-browser.
 
 # Contributors
-The web-server was primarily programmed by Michael Kasman, and some of the PHP server scripts
-were also created by Pravat Bhusal.
+The front-end was programmed by Michael Kasman, and the server-side was programmed by Pravat Bhusal.

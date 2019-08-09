@@ -26,8 +26,8 @@
       $uploadDir = '../media/faces/'; // path to store uploaded files
       $fileName = basename($_FILES['faceImageId']['name']); // file name
       $uploadedFile = $uploadDir . $fileName;
-      if(move_uploaded_file($_FILES['faceImageId']['tmp_name'], $uploadedFile)) {
-        // do nothing
+      if (move_uploaded_file($_FILES['faceImageId']['tmp_name'], $uploadedFile)) {
+          // do nothing
       } else {
           die("There was a problem saving the uploaded file.");
       }
@@ -62,4 +62,3 @@
   mysqli_query($link, $query);
 
   header("Location: $serverURL"); // back to the root URL
-?>

@@ -1,39 +1,37 @@
-
-.container{
-    margin-top: 100px;
-    width: 450px;
+.container {
+  margin-top: 100px;
+  width: 450px;
 }
 
-.button{
+.button {
   margin-top: 10px;
 }
 
 .navbar.transparent.navbar-inverse .navbar-inner {
-  background: rgba(0,0,0,0.4);
+  background: rgba(0, 0, 0, 0.4);
 }
 
-.display{
+.display {
   margin-top: 50px;
 }
 
-.title{
+.title {
   font-size: 60px;
   margin-top: 90px;
   margin-left: 30px;
   color: #27AEFC;
 }
 
-.subtitle{
+.subtitle {
   font-size: 40px;
   margin-left: 30px;
 }
 
-h4{
+h4 {
   margin-left: 275px;
   font-size: 30px;
 }
 
-body{
+body {
   background-image: url(https://www.xmple.com/wallpaper/linear-white-gradient-blue-highlight-1920x1080-c2-ffffff-87cefa-l-67-a-60-f-21.svg);
-
 }

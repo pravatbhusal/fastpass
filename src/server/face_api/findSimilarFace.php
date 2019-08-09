@@ -58,33 +58,33 @@
 
   // grab customer and boarding pass info of the persistedFaceId
   $query = "SELECT * FROM customers WHERE faceId='$persistedFaceId' ORDER BY id DESC";
-  if($result = mysqli_query($link, $query)) {
-    $row = mysqli_fetch_array($result);
-    $email = $row["email"];
-    $aadvantageId = $row["aadvantageId"];
-    $firstName = $row["firstName"];
-    $lastName = $row["lastName"];
-    $gender = $row["gender"];
-    $faceId = $row["faceId"];
-    $boardingPassId = $row["boardingPassId"];
-
-    // query for boarding pass information
-    $query = "SELECT * FROM boarding_pass WHERE id='$boardingPassId' ORDER BY id DESC";
-    if($result = mysqli_query($link, $query)) {
+  if ($result = mysqli_query($link, $query)) {
       $row = mysqli_fetch_array($result);
-      $flightNumber = $row["flightNumber"];
-      $aircraftType = $row["aircraftType"];
-      $origin = $row["origin"];
-      $destination = $row["destination"];
-      $boardingTime = $row["boardingTime"];
-      $departureTime = $row["departureTime"];
-      $arrivalTime = $row["arrivalTime"];
-      $gate = $row["gate"];
-      $seat = $row["seat"];
-      $cost = $row["cost"];
+      $email = $row["email"];
+      $aadvantageId = $row["aadvantageId"];
+      $firstName = $row["firstName"];
+      $lastName = $row["lastName"];
+      $gender = $row["gender"];
+      $faceId = $row["faceId"];
+      $boardingPassId = $row["boardingPassId"];
 
-      // HTTP Response as JSON
-      $response = json_encode(array(
+      // query for boarding pass information
+      $query = "SELECT * FROM boarding_pass WHERE id='$boardingPassId' ORDER BY id DESC";
+      if ($result = mysqli_query($link, $query)) {
+          $row = mysqli_fetch_array($result);
+          $flightNumber = $row["flightNumber"];
+          $aircraftType = $row["aircraftType"];
+          $origin = $row["origin"];
+          $destination = $row["destination"];
+          $boardingTime = $row["boardingTime"];
+          $departureTime = $row["departureTime"];
+          $arrivalTime = $row["arrivalTime"];
+          $gate = $row["gate"];
+          $seat = $row["seat"];
+          $cost = $row["cost"];
+
+          // HTTP Response as JSON
+          $response = json_encode(array(
         "email" => $email,
         "aadvantageId" => $aadvantageId,
         "firstName" => $firstName,
@@ -103,7 +103,6 @@
         "seat" => $seat,
         "cost" => $cost
       ));
-      exit($response);
-    }
+          exit($response);
+      }
   }
-?>

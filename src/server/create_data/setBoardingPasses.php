@@ -8,24 +8,23 @@ $data = json_decode($jsondata, true);
 
 // iterate through each data in the airports JSON file
 foreach ($data as $row) {
-  $flightNumber = $row["flightNumber"];
-  $aircraftType = $row["aircraftType"];
-  $origin = $row["origin"];
-  $destination = $row["destination"];
-  $boardingTime = $row["boardingTime"];
-  $departureTime = $row["departureTime"];
-  $arrivalTime = $row["arrivalTime"];
-  $gate = $row["gate"];
-  $seat = $row["seat"];
-  $cost = $row["cost"];
+    $flightNumber = $row["flightNumber"];
+    $aircraftType = $row["aircraftType"];
+    $origin = $row["origin"];
+    $destination = $row["destination"];
+    $boardingTime = $row["boardingTime"];
+    $departureTime = $row["departureTime"];
+    $arrivalTime = $row["arrivalTime"];
+    $gate = $row["gate"];
+    $seat = $row["seat"];
+    $cost = $row["cost"];
 
-  // set a query to insert the data
-  $query = "INSERT INTO boarding_pass (flightNumber, aircraftType, origin, destination, boardingTime,
+    // set a query to insert the data
+    $query = "INSERT INTO boarding_pass (flightNumber, aircraftType, origin, destination, boardingTime,
     departureTime, arrivalTime, gate, seat, cost) VALUES(
     '$flightNumber', '$aircraftType', '$origin', '$destination', '$boardingTime',
     '$departureTime', '$arrivalTime', '$gate', '$seat','$cost')";
 
-  // query it
-  mysqli_query($link, $query);
+    // query it
+    mysqli_query($link, $query);
 }
-?>
